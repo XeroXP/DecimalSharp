@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
+    <Authors>XeroXP</Authors>
+    <Description>An arbitrary-precision Decimal type for C#.
+Port of [decimal.js](https://github.com/MikeMcl/decimal.js/).</Description>
+    <Copyright>Copyright (c) $(Authors) 2022</Copyright>
+    <PackageProjectUrl>https://github.com/XeroXP/DecimalSharp</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/XeroXP/DecimalSharp.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>decimal, arbitrary-precision, bigdecimal, bignumber, significant-digits, trigonometric-functions, decimal-places</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+	<None Include="..\LICENSE">
+		<Pack>True</Pack>
+		<PackagePath>\</PackagePath>
+	</None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DecimalSharp.Core\DecimalSharp.Core.csproj" />
+  </ItemGroup>
+
+</Project>
