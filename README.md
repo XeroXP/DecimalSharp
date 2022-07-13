@@ -198,7 +198,7 @@ For further information see the [API](../../wiki/) reference documentation.
 System requirements
 -------------------
 
-BNSharp supports:
+DecimalSharp supports:
 
 * Net 6
 
