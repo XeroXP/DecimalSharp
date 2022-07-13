@@ -27,9 +27,11 @@ namespace DecimalSharp.Core
             if (start >= chars.LongLength) return "";
 
             if (end == 0) end = chars.LongLength;
-            if (end > chars.Length) end = chars.LongLength;
+            if (end > chars.LongLength) end = chars.LongLength;
 
             var length = end - start;
+
+            if (length <= 0) return "";
 
             char[] destfoo = new char[length];
             Array.Copy(chars, start, destfoo, 0, length);
